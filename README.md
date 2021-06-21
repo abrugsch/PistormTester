@@ -1,2 +1,13 @@
-# PistormTester
- 
+# PiStorm Tester
+### What is?
+PiStorm Tester is a PCB that exposes all the IO's of the 68000 DIP64 socket that PiStorm uses. There are status LED's on all the control/Address/Data Bus lines to easily see if a single line is stuck high or low. each IO is also broken out to a header for easy connection to an external microcontroller such as an arduino for more accurate analysis of the outputs, or for pulling inputs high or low as required. where the line is either an input or bi-directional (such as the Data bus) the headers have a handy VCC and GND rail adjacent for easy jumpering. 
+Combined with testing programs on the pi such as buptest, it becomes easy to narrw down individual faults such as unsoldered or broken individual flip-flops.
+### How to
+Attach the PiStorm, Pi and run buptest. This will run random data to all the 512K address range. This will cover $000000 to $07FFFF or A1-A19.
+At the speed of a bus transaction it won't be possible to see the individual data words but all 16 data lines should light up as they are being written to. The address lines will also count up as data is being written and read back. With plain buptest this will happen too fast to be useful but might give an indication of a stuck-off bit if one of the Address bus flip-flops is not performing.
+
+Any discrepencies at this point can be referenced to the schematic to find the appropriate pin that might need attention.
+If there are no obvious faults at this point, then it may be a data read error causing problems if buptest still fails in a real amiga. When buptest runs on the PiStorm tester, all reads should display a mismatch of `garbege data mismatch: data read at ${some address} 0x0000 should be 0x4F2A` or similar. The read should be 0x0000 and the expected will be random. if it is not 0x0000 then there is a  stuck-high error somewhere. stuck high usually means a flip-flop input is disconnected and floating. This usually points to one of 3 things: the flipflop leg is bridged to VCC (Though this would show up as a permanently lit LED) or the flip-flop bit leg is not properly soldered and needs reflowing, or the CPU pin is not fully flowed into the internal layers. I have seen this happen several times, especially on D0-D4.
+Stuck low errors can be found by pulling data lines (using the jumper breakouts) when running buptest. Pull one line high and buptest should show a read data of 0x0001 or 0x0020 or 0x0400 or 0x8000 (or shifted up the bit range for 16/32 bit reads like 0x8000000) if you don't see data reads reflecting the high bits then that's where your stuck bit is and you can trace the bit error to the relevant flip-flop pin (probably an unconnected output or a single fried flip-flop)
+#### Further Diagnosis
+The above steps should find the vast majority of errors, but sometimes write errors need a bit more detective work, which needs a tester program that will cycle through the data bus and address bus bits slow enough (but repeated many times to make the lights persist) and for this a modified version of buptest needs to be used (TBD) this is also required to hit all 23 address bus lines.
