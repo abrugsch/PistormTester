@@ -1,0 +1,2012 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Users\al\Documents\Kicad projects\PistormTester\PistormTester.sch</source>
+    <date>19/06/2021 19:01:28</date>
+    <tool>Eeschema (5.1.7)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>PistormTester.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U2">
+      <value>68000D</value>
+      <footprint>ZZ9 parts:DIP-64_W22.86mm_Socket_LongPads-big_holes</footprint>
+      <datasheet>https://www.nxp.com/docs/en/reference-manual/MC68000UM.pdf</datasheet>
+      <libsource lib="CPU_NXP_68000" part="68000D" description="16/32-bit Microprocessor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CA032D</tstamp>
+    </comp>
+    <comp ref="RN7">
+      <value>R_Pack04</value>
+      <footprint>Resistor_SMD:R_Array_Concave_4x0402</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C25726</field>
+      </fields>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CA54BC</tstamp>
+    </comp>
+    <comp ref="RN8">
+      <value>R_Pack04</value>
+      <footprint>Resistor_SMD:R_Array_Concave_4x0402</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C25726</field>
+      </fields>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CA79E9</tstamp>
+    </comp>
+    <comp ref="RN9">
+      <value>R_Pack04</value>
+      <footprint>Resistor_SMD:R_Array_Concave_4x0402</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C25726</field>
+      </fields>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CAD818</tstamp>
+    </comp>
+    <comp ref="RN10">
+      <value>R_Pack04</value>
+      <footprint>Resistor_SMD:R_Array_Concave_4x0402</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C25726</field>
+      </fields>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CAE2FB</tstamp>
+    </comp>
+    <comp ref="RN11">
+      <value>R_Pack04</value>
+      <footprint>Resistor_SMD:R_Array_Concave_4x0402</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C25726</field>
+      </fields>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CAF4D9</tstamp>
+    </comp>
+    <comp ref="RN12">
+      <value>R_Pack04</value>
+      <footprint>Resistor_SMD:R_Array_Concave_4x0402</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C25726</field>
+      </fields>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CB025C</tstamp>
+    </comp>
+    <comp ref="RN13">
+      <value>R_Pack04</value>
+      <footprint>Resistor_SMD:R_Array_Concave_4x0402</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C25726</field>
+      </fields>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CB0D6B</tstamp>
+    </comp>
+    <comp ref="RN1">
+      <value>R_Pack04</value>
+      <footprint>Resistor_SMD:R_Array_Concave_4x0402</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C25726</field>
+      </fields>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CB1E42</tstamp>
+    </comp>
+    <comp ref="RN2">
+      <value>R_Pack04</value>
+      <footprint>Resistor_SMD:R_Array_Concave_4x0402</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C25726</field>
+      </fields>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CB30FF</tstamp>
+    </comp>
+    <comp ref="RN3">
+      <value>R_Pack04</value>
+      <footprint>Resistor_SMD:R_Array_Concave_4x0402</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C25726</field>
+      </fields>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CB3DDE</tstamp>
+    </comp>
+    <comp ref="RN4">
+      <value>R_Pack04</value>
+      <footprint>Resistor_SMD:R_Array_Concave_4x0402</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C25726</field>
+      </fields>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CB48F5</tstamp>
+    </comp>
+    <comp ref="RN5">
+      <value>R_Pack04</value>
+      <footprint>Resistor_SMD:R_Array_Concave_4x0402</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C25726</field>
+      </fields>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CB56C4</tstamp>
+    </comp>
+    <comp ref="RN6">
+      <value>R_Pack04</value>
+      <footprint>Resistor_SMD:R_Array_Concave_4x0402</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C25726</field>
+      </fields>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CB6699</tstamp>
+    </comp>
+    <comp ref="D25">
+      <value>LED_D0</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72038</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CF9A09</tstamp>
+    </comp>
+    <comp ref="D26">
+      <value>LED_D1</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72038</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CFCFED</tstamp>
+    </comp>
+    <comp ref="D27">
+      <value>LED_D2</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72038</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CFD5A7</tstamp>
+    </comp>
+    <comp ref="D28">
+      <value>LED_D3</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72038</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CFDEB9</tstamp>
+    </comp>
+    <comp ref="D29">
+      <value>LED_D4</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72038</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D10531</tstamp>
+    </comp>
+    <comp ref="D30">
+      <value>LED_D5</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72038</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D10537</tstamp>
+    </comp>
+    <comp ref="D31">
+      <value>LED_D6</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72038</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D1053D</tstamp>
+    </comp>
+    <comp ref="D32">
+      <value>LED_D7</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72038</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D10543</tstamp>
+    </comp>
+    <comp ref="D33">
+      <value>LED_D8</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72038</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D17F6C</tstamp>
+    </comp>
+    <comp ref="D34">
+      <value>LED_D9</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72038</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D17F72</tstamp>
+    </comp>
+    <comp ref="D35">
+      <value>LED_D10</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72038</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D17F78</tstamp>
+    </comp>
+    <comp ref="D36">
+      <value>LED_D11</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72038</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D17F7E</tstamp>
+    </comp>
+    <comp ref="D37">
+      <value>LED_D12</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72038</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D17F84</tstamp>
+    </comp>
+    <comp ref="D38">
+      <value>LED_D13</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72038</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D17F8A</tstamp>
+    </comp>
+    <comp ref="D39">
+      <value>LED_D14</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72038</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D17F90</tstamp>
+    </comp>
+    <comp ref="D40">
+      <value>LED_D15</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72038</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D17F96</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED_A1</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D2F49D</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>LED_A2</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D2F4A4</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>LED_A3</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D2F4AB</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>LED_A4</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D2F4B2</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>LED_A5</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D3C42A</tstamp>
+    </comp>
+    <comp ref="D6">
+      <value>LED_A6</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D3C431</tstamp>
+    </comp>
+    <comp ref="D7">
+      <value>LED_A7</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D3C438</tstamp>
+    </comp>
+    <comp ref="D9">
+      <value>LED_A9</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D3E0FA</tstamp>
+    </comp>
+    <comp ref="D10">
+      <value>LED_A10</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D3E101</tstamp>
+    </comp>
+    <comp ref="D11">
+      <value>LED_A11</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D3E108</tstamp>
+    </comp>
+    <comp ref="D12">
+      <value>LED_A12</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D3E10F</tstamp>
+    </comp>
+    <comp ref="D13">
+      <value>LED_A13</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D3F622</tstamp>
+    </comp>
+    <comp ref="D14">
+      <value>LED_A14</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D3F629</tstamp>
+    </comp>
+    <comp ref="D15">
+      <value>LED_A15</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D3F630</tstamp>
+    </comp>
+    <comp ref="D16">
+      <value>LED_A16</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D3F637</tstamp>
+    </comp>
+    <comp ref="D17">
+      <value>LED_A17</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D40F44</tstamp>
+    </comp>
+    <comp ref="D18">
+      <value>LED_A18</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D40F4B</tstamp>
+    </comp>
+    <comp ref="D19">
+      <value>LED_A19</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D40F52</tstamp>
+    </comp>
+    <comp ref="D20">
+      <value>LED_A20</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D40F59</tstamp>
+    </comp>
+    <comp ref="D21">
+      <value>LED_A21</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D42ED4</tstamp>
+    </comp>
+    <comp ref="D22">
+      <value>LED_A22</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D42EDB</tstamp>
+    </comp>
+    <comp ref="D23">
+      <value>LED_A23</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D42EE2</tstamp>
+    </comp>
+    <comp ref="D24">
+      <value>LED_AS</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D42EE9</tstamp>
+    </comp>
+    <comp ref="D41">
+      <value>LED_IPL1</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72041</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D81D77</tstamp>
+    </comp>
+    <comp ref="D42">
+      <value>LED_BG</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72041</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D81D7E</tstamp>
+    </comp>
+    <comp ref="D44">
+      <value>LED_E</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72041</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D81D8C</tstamp>
+    </comp>
+    <comp ref="D45">
+      <value>LED_FC0</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72041</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D83AA9</tstamp>
+    </comp>
+    <comp ref="D46">
+      <value>LED_FC1</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72041</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D83AB0</tstamp>
+    </comp>
+    <comp ref="D47">
+      <value>LED_FC2</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72038</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D83AB7</tstamp>
+    </comp>
+    <comp ref="D48">
+      <value>LED_UDS</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72041</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D83ABE</tstamp>
+    </comp>
+    <comp ref="D49">
+      <value>LED_LDS</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72041</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D859CB</tstamp>
+    </comp>
+    <comp ref="D50">
+      <value>LED_RW</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72041</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D859D2</tstamp>
+    </comp>
+    <comp ref="D51">
+      <value>LED_HALT</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72041</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D859D9</tstamp>
+    </comp>
+    <comp ref="D52">
+      <value>LED_RST</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72041</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D859E0</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>Conn_01x06_Female</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x06_Female" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60F1C8DA</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>Conn_01x16_Female</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x16_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x16_Female" description="Generic connector, single row, 01x16, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60F3D4F2</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>Conn_01x16_Female</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x16_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x16_Female" description="Generic connector, single row, 01x16, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60F4250B</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>Conn_01x16_Female</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x16_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x16_Female" description="Generic connector, single row, 01x16, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60F46EF3</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>15pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C1548</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60FFEF5D</tstamp>
+    </comp>
+    <comp ref="X1">
+      <value>8MHz</value>
+      <footprint>Oscillator:Oscillator_SMD_EuroQuartz_XO32-4Pin_3.2x2.5mm</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1912111437_Shenzhen-SCTF-Elec-S3D8-000000A20F30T_C387338.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C387338</field>
+      </fields>
+      <libsource lib="Oscillator" part="TXC-7C" description="CMOS SMD Crystal Clock Oscillator, TXC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>610E74E4</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>USB_B_Micro</value>
+      <footprint>My_parts:micro_usb_U-F-M5SS-W-1</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C145783</field>
+      </fields>
+      <libsource lib="Connector" part="USB_B_Micro" description="USB Micro Type B connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61191EAE</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_02x12_Odd_Even</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_2x12_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_02x12_Odd_Even" description="Generic connector, double row, 02x12, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>611D2ECE</tstamp>
+    </comp>
+    <comp ref="D43">
+      <value>LED_VMA</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72041</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D81D85</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>Conn_02x13_Odd_Even</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_2x13_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_02x13_Odd_Even" description="Generic connector, double row, 02x13, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6122C014</tstamp>
+    </comp>
+    <comp ref="J8">
+      <value>Conn_01x13</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x13_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x13" description="Generic connector, single row, 01x13, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6122FC33</tstamp>
+    </comp>
+    <comp ref="RN14">
+      <value>R_Pack04</value>
+      <footprint>Resistor_SMD:R_Array_Concave_4x0402</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C25726</field>
+      </fields>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>612AD8AD</tstamp>
+    </comp>
+    <comp ref="RN15">
+      <value>R_Pack04</value>
+      <footprint>Resistor_SMD:R_Array_Concave_4x0402</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C25726</field>
+      </fields>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>612B00C8</tstamp>
+    </comp>
+    <comp ref="D53">
+      <value>LED_IPL0</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C2286</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>612E919E</tstamp>
+    </comp>
+    <comp ref="D54">
+      <value>LED_IPL2</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C2286</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>612E91A5</tstamp>
+    </comp>
+    <comp ref="D56">
+      <value>LED_BR</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C2286</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>612E91AC</tstamp>
+    </comp>
+    <comp ref="D57">
+      <value>LED_VPA</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C2286</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>612E91B3</tstamp>
+    </comp>
+    <comp ref="D58">
+      <value>LED_BERR</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C2286</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>612E91BA</tstamp>
+    </comp>
+    <comp ref="D55">
+      <value>LED_BGACK</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C2286</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>612E91DE</tstamp>
+    </comp>
+    <comp ref="D60">
+      <value>LED_SPARE2</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C2290</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>612E91C8</tstamp>
+    </comp>
+    <comp ref="D59">
+      <value>LED_SPARE1</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C2290</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>612E91C1</tstamp>
+    </comp>
+    <comp ref="J9">
+      <value>Conn_01x02</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6131B4C7</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C1525</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61380C40</tstamp>
+    </comp>
+    <comp ref="D8">
+      <value>LED_A8</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small_ALT" description="Light emitting diode, small symbol, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D3C43F</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="CPU_NXP_68000" part="68000D">
+      <aliases>
+        <alias>68010D</alias>
+      </aliases>
+      <description>16/32-bit Microprocessor</description>
+      <docs>https://www.nxp.com/docs/en/reference-manual/MC68000UM.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">68000D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D4" type="BiDi"/>
+        <pin num="2" name="D3" type="BiDi"/>
+        <pin num="3" name="D2" type="BiDi"/>
+        <pin num="4" name="D1" type="BiDi"/>
+        <pin num="5" name="D0" type="BiDi"/>
+        <pin num="6" name="AS" type="output"/>
+        <pin num="7" name="UDS" type="output"/>
+        <pin num="8" name="LDS" type="output"/>
+        <pin num="9" name="R/W" type="output"/>
+        <pin num="10" name="DTACK" type="input"/>
+        <pin num="11" name="BG" type="output"/>
+        <pin num="12" name="BGACK" type="input"/>
+        <pin num="13" name="BR" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+        <pin num="15" name="CLK" type="input"/>
+        <pin num="16" name="GND" type="power_in"/>
+        <pin num="17" name="HALT" type="BiDi"/>
+        <pin num="18" name="RESET" type="BiDi"/>
+        <pin num="19" name="VMA" type="output"/>
+        <pin num="20" name="E" type="output"/>
+        <pin num="21" name="VPA" type="input"/>
+        <pin num="22" name="BERR" type="input"/>
+        <pin num="23" name="IPL2" type="input"/>
+        <pin num="24" name="IPL1" type="input"/>
+        <pin num="25" name="IPL0" type="input"/>
+        <pin num="26" name="FC2" type="output"/>
+        <pin num="27" name="FC1" type="output"/>
+        <pin num="28" name="FC0" type="output"/>
+        <pin num="29" name="A1" type="output"/>
+        <pin num="30" name="A2" type="output"/>
+        <pin num="31" name="A3" type="output"/>
+        <pin num="32" name="A4" type="output"/>
+        <pin num="33" name="A5" type="output"/>
+        <pin num="34" name="A6" type="output"/>
+        <pin num="35" name="A7" type="output"/>
+        <pin num="36" name="A8" type="output"/>
+        <pin num="37" name="A9" type="output"/>
+        <pin num="38" name="A10" type="output"/>
+        <pin num="39" name="A11" type="output"/>
+        <pin num="40" name="A12" type="output"/>
+        <pin num="41" name="A13" type="output"/>
+        <pin num="42" name="A14" type="output"/>
+        <pin num="43" name="A15" type="output"/>
+        <pin num="44" name="A16" type="output"/>
+        <pin num="45" name="A17" type="output"/>
+        <pin num="46" name="A18" type="output"/>
+        <pin num="47" name="A19" type="output"/>
+        <pin num="48" name="A20" type="output"/>
+        <pin num="49" name="VCC" type="power_in"/>
+        <pin num="50" name="A21" type="output"/>
+        <pin num="51" name="A22" type="output"/>
+        <pin num="52" name="A23" type="output"/>
+        <pin num="53" name="GND" type="power_in"/>
+        <pin num="54" name="D15" type="BiDi"/>
+        <pin num="55" name="D14" type="BiDi"/>
+        <pin num="56" name="D13" type="BiDi"/>
+        <pin num="57" name="D12" type="BiDi"/>
+        <pin num="58" name="D11" type="BiDi"/>
+        <pin num="59" name="D10" type="BiDi"/>
+        <pin num="60" name="D9" type="BiDi"/>
+        <pin num="61" name="D8" type="BiDi"/>
+        <pin num="62" name="D7" type="BiDi"/>
+        <pin num="63" name="D6" type="BiDi"/>
+        <pin num="64" name="D5" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x06_Female">
+      <description>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x06_Female</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x16_Female">
+      <description>Generic connector, single row, 01x16, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x16_Female</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+        <pin num="16" name="Pin_16" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="USB_B_Micro">
+      <aliases>
+        <alias>USB_B_Mini</alias>
+      </aliases>
+      <description>USB Micro Type B connector</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>USB*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">USB_B_Micro</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VBUS" type="power_out"/>
+        <pin num="2" name="D-" type="BiDi"/>
+        <pin num="3" name="D+" type="BiDi"/>
+        <pin num="4" name="ID" type="passive"/>
+        <pin num="5" name="GND" type="power_out"/>
+        <pin num="6" name="Shield" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x13">
+      <description>Generic connector, single row, 01x13, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x13</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_02x12_Odd_Even">
+      <description>Generic connector, double row, 02x12, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x12_Odd_Even</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+        <pin num="16" name="Pin_16" type="passive"/>
+        <pin num="17" name="Pin_17" type="passive"/>
+        <pin num="18" name="Pin_18" type="passive"/>
+        <pin num="19" name="Pin_19" type="passive"/>
+        <pin num="20" name="Pin_20" type="passive"/>
+        <pin num="21" name="Pin_21" type="passive"/>
+        <pin num="22" name="Pin_22" type="passive"/>
+        <pin num="23" name="Pin_23" type="passive"/>
+        <pin num="24" name="Pin_24" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_02x13_Odd_Even">
+      <description>Generic connector, double row, 02x13, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x13_Odd_Even</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+        <pin num="16" name="Pin_16" type="passive"/>
+        <pin num="17" name="Pin_17" type="passive"/>
+        <pin num="18" name="Pin_18" type="passive"/>
+        <pin num="19" name="Pin_19" type="passive"/>
+        <pin num="20" name="Pin_20" type="passive"/>
+        <pin num="21" name="Pin_21" type="passive"/>
+        <pin num="22" name="Pin_22" type="passive"/>
+        <pin num="23" name="Pin_23" type="passive"/>
+        <pin num="24" name="Pin_24" type="passive"/>
+        <pin num="25" name="Pin_25" type="passive"/>
+        <pin num="26" name="Pin_26" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED_Small_ALT">
+      <description>Light emitting diode, small symbol, filled shape</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED_Small_ALT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Pack04">
+      <description>4 resistor network, parallel topology</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>DIP*</fp>
+        <fp>SOIC*</fp>
+        <fp>R*Array*Concave*</fp>
+        <fp>R*Array*Convex*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">RN</field>
+        <field name="Value">R_Pack04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="R1.1" type="passive"/>
+        <pin num="2" name="R2.1" type="passive"/>
+        <pin num="3" name="R3.1" type="passive"/>
+        <pin num="4" name="R4.1" type="passive"/>
+        <pin num="5" name="R4.2" type="passive"/>
+        <pin num="6" name="R3.2" type="passive"/>
+        <pin num="7" name="R2.2" type="passive"/>
+        <pin num="8" name="R1.2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Oscillator" part="TXC-7C">
+      <description>CMOS SMD Crystal Clock Oscillator, TXC</description>
+      <docs>http://www.txccorp.com/download/products/osc/7C_o.pdf</docs>
+      <footprints>
+        <fp>Oscillator*SMD*TXC*7C*5.0x3.2mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">X</field>
+        <field name="Value">TXC-7C</field>
+        <field name="Footprint">Oscillator:Oscillator_SMD_TXC_7C-4Pin_5.0x3.2mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="EN" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="OUT" type="output"/>
+        <pin num="4" name="Vdd" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="CPU_NXP_68000">
+      <uri>C:\Program Files\KiCad\share\kicad\library/CPU_NXP_68000.lib</uri>
+    </library>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector.lib</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="Oscillator">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Oscillator.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+5V">
+      <node ref="J6" pin="16"/>
+      <node ref="U2" pin="14"/>
+      <node ref="U2" pin="49"/>
+      <node ref="J6" pin="1"/>
+      <node ref="J6" pin="10"/>
+      <node ref="J6" pin="11"/>
+      <node ref="J6" pin="12"/>
+      <node ref="J6" pin="13"/>
+      <node ref="J6" pin="14"/>
+      <node ref="J6" pin="15"/>
+      <node ref="J6" pin="2"/>
+      <node ref="J6" pin="3"/>
+      <node ref="J6" pin="4"/>
+      <node ref="J6" pin="5"/>
+      <node ref="J6" pin="6"/>
+      <node ref="J8" pin="3"/>
+      <node ref="J8" pin="2"/>
+      <node ref="J8" pin="13"/>
+      <node ref="J8" pin="12"/>
+      <node ref="J1" pin="1"/>
+      <node ref="J8" pin="11"/>
+      <node ref="J6" pin="7"/>
+      <node ref="J8" pin="8"/>
+      <node ref="J8" pin="9"/>
+      <node ref="J8" pin="7"/>
+      <node ref="J8" pin="6"/>
+      <node ref="J8" pin="5"/>
+      <node ref="C1" pin="1"/>
+      <node ref="J8" pin="10"/>
+      <node ref="J8" pin="1"/>
+      <node ref="J8" pin="4"/>
+      <node ref="J6" pin="8"/>
+      <node ref="J6" pin="9"/>
+      <node ref="X1" pin="4"/>
+      <node ref="X1" pin="1"/>
+    </net>
+    <net code="2" name="GND">
+      <node ref="RN6" pin="6"/>
+      <node ref="RN6" pin="8"/>
+      <node ref="RN6" pin="7"/>
+      <node ref="RN6" pin="5"/>
+      <node ref="RN5" pin="8"/>
+      <node ref="RN5" pin="7"/>
+      <node ref="RN5" pin="6"/>
+      <node ref="RN5" pin="5"/>
+      <node ref="RN3" pin="5"/>
+      <node ref="RN2" pin="8"/>
+      <node ref="RN2" pin="7"/>
+      <node ref="RN2" pin="6"/>
+      <node ref="RN2" pin="5"/>
+      <node ref="RN1" pin="8"/>
+      <node ref="RN1" pin="7"/>
+      <node ref="RN1" pin="6"/>
+      <node ref="RN1" pin="5"/>
+      <node ref="J7" pin="9"/>
+      <node ref="J7" pin="1"/>
+      <node ref="J7" pin="11"/>
+      <node ref="J7" pin="15"/>
+      <node ref="J7" pin="7"/>
+      <node ref="J7" pin="5"/>
+      <node ref="J7" pin="3"/>
+      <node ref="J7" pin="25"/>
+      <node ref="J7" pin="23"/>
+      <node ref="J7" pin="21"/>
+      <node ref="J7" pin="19"/>
+      <node ref="J7" pin="17"/>
+      <node ref="J7" pin="13"/>
+      <node ref="C1" pin="2"/>
+      <node ref="RN10" pin="6"/>
+      <node ref="RN13" pin="8"/>
+      <node ref="RN13" pin="7"/>
+      <node ref="RN13" pin="6"/>
+      <node ref="RN13" pin="5"/>
+      <node ref="RN12" pin="8"/>
+      <node ref="RN12" pin="7"/>
+      <node ref="RN12" pin="6"/>
+      <node ref="RN12" pin="5"/>
+      <node ref="RN11" pin="8"/>
+      <node ref="RN11" pin="7"/>
+      <node ref="RN11" pin="6"/>
+      <node ref="RN11" pin="5"/>
+      <node ref="RN10" pin="8"/>
+      <node ref="RN10" pin="7"/>
+      <node ref="RN8" pin="5"/>
+      <node ref="RN10" pin="5"/>
+      <node ref="U2" pin="16"/>
+      <node ref="U2" pin="10"/>
+      <node ref="U2" pin="53"/>
+      <node ref="RN4" pin="8"/>
+      <node ref="RN4" pin="7"/>
+      <node ref="RN4" pin="6"/>
+      <node ref="RN4" pin="5"/>
+      <node ref="RN3" pin="8"/>
+      <node ref="RN3" pin="7"/>
+      <node ref="RN3" pin="6"/>
+      <node ref="RN9" pin="8"/>
+      <node ref="RN9" pin="7"/>
+      <node ref="RN9" pin="6"/>
+      <node ref="RN9" pin="5"/>
+      <node ref="RN8" pin="8"/>
+      <node ref="RN8" pin="7"/>
+      <node ref="RN8" pin="6"/>
+      <node ref="RN7" pin="8"/>
+      <node ref="RN7" pin="7"/>
+      <node ref="RN7" pin="6"/>
+      <node ref="RN7" pin="5"/>
+      <node ref="J4" pin="1"/>
+      <node ref="J4" pin="10"/>
+      <node ref="C2" pin="2"/>
+      <node ref="J4" pin="11"/>
+      <node ref="J4" pin="12"/>
+      <node ref="J4" pin="3"/>
+      <node ref="J4" pin="14"/>
+      <node ref="J4" pin="15"/>
+      <node ref="J4" pin="16"/>
+      <node ref="RN14" pin="8"/>
+      <node ref="RN14" pin="7"/>
+      <node ref="J4" pin="2"/>
+      <node ref="X1" pin="2"/>
+      <node ref="RN14" pin="5"/>
+      <node ref="J4" pin="13"/>
+      <node ref="J4" pin="4"/>
+      <node ref="J4" pin="5"/>
+      <node ref="J4" pin="6"/>
+      <node ref="J4" pin="7"/>
+      <node ref="RN14" pin="6"/>
+      <node ref="J1" pin="5"/>
+      <node ref="J1" pin="6"/>
+      <node ref="RN15" pin="8"/>
+      <node ref="RN15" pin="7"/>
+      <node ref="RN15" pin="6"/>
+      <node ref="RN15" pin="5"/>
+      <node ref="J4" pin="9"/>
+      <node ref="J4" pin="8"/>
+    </net>
+    <net code="3" name="Net-(J1-Pad2)">
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="4" name="Net-(J1-Pad3)">
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="5" name="Net-(J1-Pad4)">
+      <node ref="J1" pin="4"/>
+    </net>
+    <net code="6" name="/IPL0">
+      <node ref="J3" pin="1"/>
+      <node ref="D53" pin="2"/>
+      <node ref="U2" pin="25"/>
+    </net>
+    <net code="7" name="/IPL2">
+      <node ref="J3" pin="2"/>
+      <node ref="U2" pin="23"/>
+      <node ref="D54" pin="2"/>
+    </net>
+    <net code="8" name="/BGACK">
+      <node ref="U2" pin="12"/>
+      <node ref="D55" pin="2"/>
+      <node ref="J3" pin="3"/>
+    </net>
+    <net code="9" name="/BR">
+      <node ref="D56" pin="2"/>
+      <node ref="U2" pin="13"/>
+      <node ref="J3" pin="4"/>
+    </net>
+    <net code="10" name="/VPA">
+      <node ref="D57" pin="2"/>
+      <node ref="U2" pin="21"/>
+      <node ref="J3" pin="5"/>
+    </net>
+    <net code="11" name="/BERR">
+      <node ref="U2" pin="22"/>
+      <node ref="D58" pin="2"/>
+      <node ref="J3" pin="6"/>
+    </net>
+    <net code="12" name="/D7">
+      <node ref="J5" pin="8"/>
+      <node ref="D32" pin="2"/>
+      <node ref="U2" pin="62"/>
+    </net>
+    <net code="13" name="/D0">
+      <node ref="D25" pin="2"/>
+      <node ref="U2" pin="5"/>
+      <node ref="J5" pin="1"/>
+    </net>
+    <net code="14" name="/D9">
+      <node ref="D34" pin="2"/>
+      <node ref="U2" pin="60"/>
+      <node ref="J5" pin="10"/>
+    </net>
+    <net code="15" name="/D10">
+      <node ref="J5" pin="11"/>
+      <node ref="D35" pin="2"/>
+      <node ref="U2" pin="59"/>
+    </net>
+    <net code="16" name="/D11">
+      <node ref="J5" pin="12"/>
+      <node ref="D36" pin="2"/>
+      <node ref="U2" pin="58"/>
+    </net>
+    <net code="17" name="/D12">
+      <node ref="U2" pin="57"/>
+      <node ref="D37" pin="2"/>
+      <node ref="J5" pin="13"/>
+    </net>
+    <net code="18" name="/D13">
+      <node ref="D38" pin="2"/>
+      <node ref="J5" pin="14"/>
+      <node ref="U2" pin="56"/>
+    </net>
+    <net code="19" name="/D14">
+      <node ref="J5" pin="15"/>
+      <node ref="U2" pin="55"/>
+      <node ref="D39" pin="2"/>
+    </net>
+    <net code="20" name="/D15">
+      <node ref="J5" pin="16"/>
+      <node ref="D40" pin="2"/>
+      <node ref="U2" pin="54"/>
+    </net>
+    <net code="21" name="/D1">
+      <node ref="U2" pin="4"/>
+      <node ref="D26" pin="2"/>
+      <node ref="J5" pin="2"/>
+    </net>
+    <net code="22" name="/D2">
+      <node ref="D27" pin="2"/>
+      <node ref="U2" pin="3"/>
+      <node ref="J5" pin="3"/>
+    </net>
+    <net code="23" name="/D3">
+      <node ref="U2" pin="2"/>
+      <node ref="J5" pin="4"/>
+      <node ref="D28" pin="2"/>
+    </net>
+    <net code="24" name="/D4">
+      <node ref="J5" pin="5"/>
+      <node ref="D29" pin="2"/>
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="25" name="/D5">
+      <node ref="D30" pin="2"/>
+      <node ref="U2" pin="64"/>
+      <node ref="J5" pin="6"/>
+    </net>
+    <net code="26" name="/D6">
+      <node ref="U2" pin="63"/>
+      <node ref="J5" pin="7"/>
+      <node ref="D31" pin="2"/>
+    </net>
+    <net code="27" name="/D8">
+      <node ref="J5" pin="9"/>
+      <node ref="U2" pin="61"/>
+      <node ref="D33" pin="2"/>
+    </net>
+    <net code="28" name="Net-(D57-Pad1)">
+      <node ref="D57" pin="1"/>
+      <node ref="RN15" pin="1"/>
+    </net>
+    <net code="29" name="Net-(D55-Pad1)">
+      <node ref="D55" pin="1"/>
+      <node ref="RN14" pin="3"/>
+    </net>
+    <net code="30" name="Net-(D60-Pad1)">
+      <node ref="RN15" pin="4"/>
+      <node ref="D60" pin="1"/>
+    </net>
+    <net code="31" name="Net-(D59-Pad1)">
+      <node ref="RN15" pin="3"/>
+      <node ref="D59" pin="1"/>
+    </net>
+    <net code="32" name="/SP1">
+      <node ref="D59" pin="2"/>
+      <node ref="J9" pin="1"/>
+    </net>
+    <net code="33" name="/SP2">
+      <node ref="D60" pin="2"/>
+      <node ref="J9" pin="2"/>
+    </net>
+    <net code="34" name="Net-(D20-Pad1)">
+      <node ref="D20" pin="1"/>
+      <node ref="RN2" pin="1"/>
+    </net>
+    <net code="35" name="Net-(D8-Pad1)">
+      <node ref="D8" pin="1"/>
+      <node ref="RN5" pin="1"/>
+    </net>
+    <net code="36" name="/A8">
+      <node ref="U2" pin="36"/>
+      <node ref="J2" pin="8"/>
+      <node ref="D8" pin="2"/>
+    </net>
+    <net code="37" name="Net-(D53-Pad1)">
+      <node ref="RN14" pin="1"/>
+      <node ref="D53" pin="1"/>
+    </net>
+    <net code="38" name="Net-(D54-Pad1)">
+      <node ref="RN14" pin="2"/>
+      <node ref="D54" pin="1"/>
+    </net>
+    <net code="39" name="Net-(D56-Pad1)">
+      <node ref="RN14" pin="4"/>
+      <node ref="D56" pin="1"/>
+    </net>
+    <net code="40" name="Net-(D58-Pad1)">
+      <node ref="RN15" pin="2"/>
+      <node ref="D58" pin="1"/>
+    </net>
+    <net code="41" name="/A1">
+      <node ref="U2" pin="29"/>
+      <node ref="D1" pin="2"/>
+      <node ref="J2" pin="1"/>
+    </net>
+    <net code="42" name="/A2">
+      <node ref="U2" pin="30"/>
+      <node ref="J2" pin="2"/>
+      <node ref="D2" pin="2"/>
+    </net>
+    <net code="43" name="/VMA">
+      <node ref="J7" pin="8"/>
+      <node ref="D43" pin="2"/>
+      <node ref="U2" pin="19"/>
+    </net>
+    <net code="44" name="/CLK">
+      <node ref="C2" pin="1"/>
+      <node ref="U2" pin="15"/>
+      <node ref="X1" pin="3"/>
+    </net>
+    <net code="45" name="Net-(D48-Pad1)">
+      <node ref="D48" pin="1"/>
+      <node ref="RN12" pin="4"/>
+    </net>
+    <net code="46" name="Net-(D41-Pad1)">
+      <node ref="D41" pin="1"/>
+      <node ref="RN11" pin="1"/>
+    </net>
+    <net code="47" name="Net-(D42-Pad1)">
+      <node ref="RN11" pin="2"/>
+      <node ref="D42" pin="1"/>
+    </net>
+    <net code="48" name="Net-(D43-Pad1)">
+      <node ref="RN11" pin="3"/>
+      <node ref="D43" pin="1"/>
+    </net>
+    <net code="49" name="Net-(D44-Pad1)">
+      <node ref="RN11" pin="4"/>
+      <node ref="D44" pin="1"/>
+    </net>
+    <net code="50" name="Net-(D45-Pad1)">
+      <node ref="RN12" pin="1"/>
+      <node ref="D45" pin="1"/>
+    </net>
+    <net code="51" name="Net-(D46-Pad1)">
+      <node ref="RN12" pin="2"/>
+      <node ref="D46" pin="1"/>
+    </net>
+    <net code="52" name="Net-(D47-Pad1)">
+      <node ref="D47" pin="1"/>
+      <node ref="RN12" pin="3"/>
+    </net>
+    <net code="53" name="Net-(D40-Pad1)">
+      <node ref="D40" pin="1"/>
+      <node ref="RN10" pin="4"/>
+    </net>
+    <net code="54" name="Net-(D49-Pad1)">
+      <node ref="D49" pin="1"/>
+      <node ref="RN13" pin="1"/>
+    </net>
+    <net code="55" name="Net-(D50-Pad1)">
+      <node ref="RN13" pin="2"/>
+      <node ref="D50" pin="1"/>
+    </net>
+    <net code="56" name="Net-(D51-Pad1)">
+      <node ref="RN13" pin="3"/>
+      <node ref="D51" pin="1"/>
+    </net>
+    <net code="57" name="Net-(D52-Pad1)">
+      <node ref="RN13" pin="4"/>
+      <node ref="D52" pin="1"/>
+    </net>
+    <net code="58" name="Net-(D25-Pad1)">
+      <node ref="D25" pin="1"/>
+      <node ref="RN7" pin="1"/>
+    </net>
+    <net code="59" name="Net-(D26-Pad1)">
+      <node ref="D26" pin="1"/>
+      <node ref="RN7" pin="2"/>
+    </net>
+    <net code="60" name="Net-(D27-Pad1)">
+      <node ref="RN7" pin="3"/>
+      <node ref="D27" pin="1"/>
+    </net>
+    <net code="61" name="Net-(D28-Pad1)">
+      <node ref="RN7" pin="4"/>
+      <node ref="D28" pin="1"/>
+    </net>
+    <net code="62" name="Net-(D29-Pad1)">
+      <node ref="D29" pin="1"/>
+      <node ref="RN8" pin="1"/>
+    </net>
+    <net code="63" name="Net-(D30-Pad1)">
+      <node ref="RN8" pin="2"/>
+      <node ref="D30" pin="1"/>
+    </net>
+    <net code="64" name="Net-(D31-Pad1)">
+      <node ref="D31" pin="1"/>
+      <node ref="RN8" pin="3"/>
+    </net>
+    <net code="65" name="Net-(D32-Pad1)">
+      <node ref="D32" pin="1"/>
+      <node ref="RN8" pin="4"/>
+    </net>
+    <net code="66" name="Net-(D33-Pad1)">
+      <node ref="D33" pin="1"/>
+      <node ref="RN9" pin="1"/>
+    </net>
+    <net code="67" name="Net-(D34-Pad1)">
+      <node ref="D34" pin="1"/>
+      <node ref="RN9" pin="2"/>
+    </net>
+    <net code="68" name="Net-(D35-Pad1)">
+      <node ref="D35" pin="1"/>
+      <node ref="RN9" pin="3"/>
+    </net>
+    <net code="69" name="Net-(D36-Pad1)">
+      <node ref="RN9" pin="4"/>
+      <node ref="D36" pin="1"/>
+    </net>
+    <net code="70" name="Net-(D37-Pad1)">
+      <node ref="RN10" pin="1"/>
+      <node ref="D37" pin="1"/>
+    </net>
+    <net code="71" name="Net-(D38-Pad1)">
+      <node ref="D38" pin="1"/>
+      <node ref="RN10" pin="2"/>
+    </net>
+    <net code="72" name="Net-(D39-Pad1)">
+      <node ref="D39" pin="1"/>
+      <node ref="RN10" pin="3"/>
+    </net>
+    <net code="73" name="Net-(D22-Pad1)">
+      <node ref="RN1" pin="3"/>
+      <node ref="D22" pin="1"/>
+    </net>
+    <net code="74" name="/A14">
+      <node ref="U2" pin="42"/>
+      <node ref="J2" pin="14"/>
+      <node ref="D14" pin="2"/>
+    </net>
+    <net code="75" name="Net-(D15-Pad1)">
+      <node ref="D15" pin="1"/>
+      <node ref="RN3" pin="2"/>
+    </net>
+    <net code="76" name="/A15">
+      <node ref="D15" pin="2"/>
+      <node ref="J2" pin="15"/>
+      <node ref="U2" pin="43"/>
+    </net>
+    <net code="77" name="Net-(D16-Pad1)">
+      <node ref="D16" pin="1"/>
+      <node ref="RN3" pin="1"/>
+    </net>
+    <net code="78" name="/A16">
+      <node ref="U2" pin="44"/>
+      <node ref="J2" pin="16"/>
+      <node ref="D16" pin="2"/>
+    </net>
+    <net code="79" name="Net-(D17-Pad1)">
+      <node ref="RN2" pin="4"/>
+      <node ref="D17" pin="1"/>
+    </net>
+    <net code="80" name="/A17">
+      <node ref="J2" pin="17"/>
+      <node ref="U2" pin="45"/>
+      <node ref="D17" pin="2"/>
+    </net>
+    <net code="81" name="Net-(D18-Pad1)">
+      <node ref="RN2" pin="3"/>
+      <node ref="D18" pin="1"/>
+    </net>
+    <net code="82" name="/A18">
+      <node ref="J2" pin="18"/>
+      <node ref="U2" pin="46"/>
+      <node ref="D18" pin="2"/>
+    </net>
+    <net code="83" name="Net-(D19-Pad1)">
+      <node ref="RN2" pin="2"/>
+      <node ref="D19" pin="1"/>
+    </net>
+    <net code="84" name="/A19">
+      <node ref="U2" pin="47"/>
+      <node ref="J2" pin="19"/>
+      <node ref="D19" pin="2"/>
+    </net>
+    <net code="85" name="/A20">
+      <node ref="J2" pin="20"/>
+      <node ref="D20" pin="2"/>
+      <node ref="U2" pin="48"/>
+    </net>
+    <net code="86" name="Net-(D21-Pad1)">
+      <node ref="RN1" pin="4"/>
+      <node ref="D21" pin="1"/>
+    </net>
+    <net code="87" name="/A21">
+      <node ref="J2" pin="21"/>
+      <node ref="U2" pin="50"/>
+      <node ref="D21" pin="2"/>
+    </net>
+    <net code="88" name="Net-(D14-Pad1)">
+      <node ref="D14" pin="1"/>
+      <node ref="RN3" pin="3"/>
+    </net>
+    <net code="89" name="/A22">
+      <node ref="U2" pin="51"/>
+      <node ref="D22" pin="2"/>
+      <node ref="J2" pin="22"/>
+    </net>
+    <net code="90" name="Net-(D23-Pad1)">
+      <node ref="D23" pin="1"/>
+      <node ref="RN1" pin="2"/>
+    </net>
+    <net code="91" name="/A23">
+      <node ref="J2" pin="23"/>
+      <node ref="U2" pin="52"/>
+      <node ref="D23" pin="2"/>
+    </net>
+    <net code="92" name="Net-(D24-Pad1)">
+      <node ref="RN1" pin="1"/>
+      <node ref="D24" pin="1"/>
+    </net>
+    <net code="93" name="/AS">
+      <node ref="J2" pin="24"/>
+      <node ref="J7" pin="2"/>
+      <node ref="U2" pin="6"/>
+      <node ref="D24" pin="2"/>
+    </net>
+    <net code="94" name="/IPL1">
+      <node ref="J7" pin="4"/>
+      <node ref="U2" pin="24"/>
+      <node ref="D41" pin="2"/>
+    </net>
+    <net code="95" name="/BG">
+      <node ref="J7" pin="6"/>
+      <node ref="D42" pin="2"/>
+      <node ref="U2" pin="11"/>
+    </net>
+    <net code="96" name="/E">
+      <node ref="D44" pin="2"/>
+      <node ref="U2" pin="20"/>
+      <node ref="J7" pin="10"/>
+    </net>
+    <net code="97" name="/FC0">
+      <node ref="D45" pin="2"/>
+      <node ref="J7" pin="12"/>
+      <node ref="U2" pin="28"/>
+    </net>
+    <net code="98" name="/A5">
+      <node ref="D5" pin="2"/>
+      <node ref="U2" pin="33"/>
+      <node ref="J2" pin="5"/>
+    </net>
+    <net code="99" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1"/>
+      <node ref="RN6" pin="4"/>
+    </net>
+    <net code="100" name="Net-(D2-Pad1)">
+      <node ref="D2" pin="1"/>
+      <node ref="RN6" pin="3"/>
+    </net>
+    <net code="101" name="Net-(D3-Pad1)">
+      <node ref="D3" pin="1"/>
+      <node ref="RN6" pin="2"/>
+    </net>
+    <net code="102" name="/A3">
+      <node ref="U2" pin="31"/>
+      <node ref="J2" pin="3"/>
+      <node ref="D3" pin="2"/>
+    </net>
+    <net code="103" name="Net-(D4-Pad1)">
+      <node ref="D4" pin="1"/>
+      <node ref="RN6" pin="1"/>
+    </net>
+    <net code="104" name="/A4">
+      <node ref="U2" pin="32"/>
+      <node ref="J2" pin="4"/>
+      <node ref="D4" pin="2"/>
+    </net>
+    <net code="105" name="Net-(D5-Pad1)">
+      <node ref="RN5" pin="4"/>
+      <node ref="D5" pin="1"/>
+    </net>
+    <net code="106" name="/FC1">
+      <node ref="J7" pin="14"/>
+      <node ref="D46" pin="2"/>
+      <node ref="U2" pin="27"/>
+    </net>
+    <net code="107" name="Net-(D6-Pad1)">
+      <node ref="RN5" pin="3"/>
+      <node ref="D6" pin="1"/>
+    </net>
+    <net code="108" name="/A6">
+      <node ref="J2" pin="6"/>
+      <node ref="D6" pin="2"/>
+      <node ref="U2" pin="34"/>
+    </net>
+    <net code="109" name="Net-(D7-Pad1)">
+      <node ref="D7" pin="1"/>
+      <node ref="RN5" pin="2"/>
+    </net>
+    <net code="110" name="/A7">
+      <node ref="J2" pin="7"/>
+      <node ref="U2" pin="35"/>
+      <node ref="D7" pin="2"/>
+    </net>
+    <net code="111" name="Net-(D9-Pad1)">
+      <node ref="RN4" pin="4"/>
+      <node ref="D9" pin="1"/>
+    </net>
+    <net code="112" name="/A9">
+      <node ref="D9" pin="2"/>
+      <node ref="J2" pin="9"/>
+      <node ref="U2" pin="37"/>
+    </net>
+    <net code="113" name="Net-(D10-Pad1)">
+      <node ref="D10" pin="1"/>
+      <node ref="RN4" pin="3"/>
+    </net>
+    <net code="114" name="/A10">
+      <node ref="D10" pin="2"/>
+      <node ref="J2" pin="10"/>
+      <node ref="U2" pin="38"/>
+    </net>
+    <net code="115" name="Net-(D11-Pad1)">
+      <node ref="D11" pin="1"/>
+      <node ref="RN4" pin="2"/>
+    </net>
+    <net code="116" name="/A11">
+      <node ref="U2" pin="39"/>
+      <node ref="J2" pin="11"/>
+      <node ref="D11" pin="2"/>
+    </net>
+    <net code="117" name="Net-(D12-Pad1)">
+      <node ref="D12" pin="1"/>
+      <node ref="RN4" pin="1"/>
+    </net>
+    <net code="118" name="/A12">
+      <node ref="U2" pin="40"/>
+      <node ref="J2" pin="12"/>
+      <node ref="D12" pin="2"/>
+    </net>
+    <net code="119" name="Net-(D13-Pad1)">
+      <node ref="RN3" pin="4"/>
+      <node ref="D13" pin="1"/>
+    </net>
+    <net code="120" name="/A13">
+      <node ref="U2" pin="41"/>
+      <node ref="J2" pin="13"/>
+      <node ref="D13" pin="2"/>
+    </net>
+    <net code="121" name="/FC2">
+      <node ref="J7" pin="16"/>
+      <node ref="U2" pin="26"/>
+      <node ref="D47" pin="2"/>
+    </net>
+    <net code="122" name="/UDS">
+      <node ref="U2" pin="7"/>
+      <node ref="J7" pin="18"/>
+      <node ref="D48" pin="2"/>
+    </net>
+    <net code="123" name="/LDS">
+      <node ref="D49" pin="2"/>
+      <node ref="U2" pin="8"/>
+      <node ref="J7" pin="20"/>
+    </net>
+    <net code="124" name="/RW">
+      <node ref="J7" pin="22"/>
+      <node ref="U2" pin="9"/>
+      <node ref="D50" pin="2"/>
+    </net>
+    <net code="125" name="/HALT">
+      <node ref="D51" pin="2"/>
+      <node ref="U2" pin="17"/>
+      <node ref="J7" pin="24"/>
+    </net>
+    <net code="126" name="/RESET">
+      <node ref="U2" pin="18"/>
+      <node ref="J7" pin="26"/>
+      <node ref="D52" pin="2"/>
+    </net>
+  </nets>
+</export>

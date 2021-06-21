@@ -19,7 +19,7 @@ U 1 1 60CA032D
 P 5300 3400
 F 0 "U2" H 5300 5981 50  0000 C CNN
 F 1 "68000D" H 5300 5890 50  0000 C CNN
-F 2 "amiga parts:DIP-64_W22.86mm_Socket_LongPads-big_holes" H 5300 3400 50  0001 C CNN
+F 2 "ZZ9 parts:DIP-64_W22.86mm_Socket_LongPads-big_holes" H 5300 3400 50  0001 C CNN
 F 3 "https://www.nxp.com/docs/en/reference-manual/MC68000UM.pdf" H 5300 3400 50  0001 C CNN
 	1    5300 3400
 	1    0    0    -1  
