@@ -3,6 +3,7 @@
 PiStorm Tester is a PCB that exposes all the IO's of the 68000 DIP64 socket that PiStorm uses. There are status LED's on all the control/Address/Data Bus lines to easily see if a single line is stuck high or low. each IO is also broken out to a header for easy connection to an external microcontroller such as an arduino for more accurate analysis of the outputs, or for pulling inputs high or low as required. where the line is either an input or bi-directional (such as the Data bus) the headers have a handy VCC and GND rail adjacent for easy jumpering. 
 Combined with testing programs on the pi such as buptest, it becomes easy to narrw down individual faults such as unsoldered or broken individual flip-flops.
 ### How to
+(------caveat! no PiStorm testers have been built yet so don't order one until I've tested the first batch!-------)
 Attach the PiStorm, Pi and run buptest. This will run random data to all the 512K address range. This will cover $000000 to $07FFFF or A1-A19.
 At the speed of a bus transaction it won't be possible to see the individual data words but all 16 data lines should light up as they are being written to. The address lines will also count up as data is being written and read back. With plain buptest this will happen too fast to be useful but might give an indication of a stuck-off bit if one of the Address bus flip-flops is not performing.
 
