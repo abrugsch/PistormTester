@@ -6,7 +6,7 @@ PiStorm Tester is a PCB that exposes all the IO's of the 68000 DIP64 socket that
 Combined with testing programs on the pi such as buptest, it becomes easy to narrw down individual faults such as unsoldered or broken individual flip-flops.
 
 ### Make Them
-You can build them by hand. submit the gerbers to a PCB fab of your choice (AllPCB has a free promotion ATM) but then you have to place and solder 60 0603 LED's and 15 4x0402 resistor arrays by hand. That's pretty tedious so I've also included the JLCPCB production files to get them assembled. All the JLC parts are basic parts so it costs barely more to get them assembled than to just order the bare boards. (10x costs around $50 including UK delivery by courier)
+You can build them by hand. submit the gerbers (Rev B gerbers have not yet been tested. use at your own risk. roll back to Rev A if you want a confirmed working board) to a PCB fab of your choice (AllPCB has a free promotion ATM) but then you have to place and solder 60 0603 LED's and 15 4x0402 resistor arrays by hand. That's pretty tedious so I've also included the JLCPCB production files to get them assembled. All the JLC parts are basic parts so it costs barely more to get them assembled than to just order the bare boards. (10x costs around $50 including UK delivery by courier)
 
 The big caveat is that they(JLCPCB assembly) don't have a 5v 7-ish MHz oscillator in their assembly catalog so that part has an LCSC part number ([C387338](https://lcsc.com/product-detail/Oscillators_Shenzhen-SCTF-Elec-S3D8-000000A20F30T_C387338.html)) but must be sourced and placed seperately.
 
