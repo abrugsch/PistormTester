@@ -10,7 +10,7 @@ Run ./build_zz9.sh to build the test program just like buptest.
 Then run sudo ./zz9fulltest.
 * Test 1:  
 Watch the LED's on the address bus. they should all light in turn from A1 to A23. AS should dim slightly as it goes from being held high to being pulsed. All data bits should appear to be on for the duration of this test.
-* Test 2:
+* Test 2:  
 Watch the Data bus LED's. They should light in turn from D0 through to D15. the zz9fulltest program will also read the state back so if there is a discrepency between what is written and what is read then it will be displayed as a data mismatch error.
 if you want to force an error, you can goahead and set one of the data lines high or low with the breakout area by bridging the centre row with an adjacent vcc or gnd. this is probably best done with a 1K resistor, but not entirely necessary.
 
