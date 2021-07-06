@@ -4,6 +4,12 @@
 ### What is?
 PiStorm Tester is a PCB that exposes all the IO's of the 68000 DIP64 socket that PiStorm uses. There are status LED's on all the control/Address/Data Bus lines to easily see if a single line is stuck high or low. each IO is also broken out to a header for easy connection to an external microcontroller such as an arduino for more accurate analysis of the outputs, or for pulling inputs high or low as required. where the line is either an input or bi-directional (such as the Data bus) the headers have a handy VCC and GND rail adjacent for easy jumpering. 
 Combined with testing programs on the pi such as buptest, it becomes easy to narrw down individual faults such as unsoldered or broken individual flip-flops.
+
+### Make Them
+You can build them by hand. submit the gerbers to a PCB fab of your choice (AllPCB has a free promotion ATM) but then you have to place and solder 60 0603 LED's and 15 4x0402 resistor arrays by hand. That's pretty tedious so I've also included the JLCPCB production files to get them assembled. All the JLC parts are basic parts so it costs barely more to get them assembled than to just order the bare boards. (10x costs around $50 including UK delivery by courier)
+
+The big caveat is that they(JLCPCB assembly) don't have a 5v 7-ish MHz oscillator in their assembly catalog so that part has an LCSC part number ([C387338](https://lcsc.com/product-detail/Oscillators_Shenzhen-SCTF-Elec-S3D8-000000A20F30T_C387338.html)) but must be sourced and placed seperately.
+
 ### How to
 First copy the files in the code folder to your pistorm folder on your pi.  
 Run ./build_zz9.sh to build the test program just like buptest.  
