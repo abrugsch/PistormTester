@@ -5,12 +5,25 @@
 PiStorm Tester is a PCB that exposes all the IO's of the 68000 DIP64 socket that PiStorm uses. There are status LED's on all the control/Address/Data Bus lines to easily see if a single line is stuck high or low. each IO is also broken out to a header for easy connection to an external microcontroller such as an arduino for more accurate analysis of the outputs, or for pulling inputs high or low as required. where the line is either an input or bi-directional (such as the Data bus) the headers have a handy VCC and GND rail adjacent for easy jumpering. 
 Combined with testing programs on the pi such as buptest, it becomes easy to narrw down individual faults such as unsoldered or broken individual flip-flops.
 ### How to
-(------caveat! no PiStorm testers have been built yet so don't order one until I've tested the first batch!-------)  
-Attach the PiStorm, Pi and run buptest. This will run random data to all the 512K address range. This will cover $000000 to $07FFFF or A1-A19.
-At the speed of a bus transaction it won't be possible to see the individual data words but all 16 data lines should light up as they are being written to. The address lines will also count up as data is being written and read back. With plain buptest this will happen too fast to be useful but might give an indication of a stuck-off bit if one of the Address bus flip-flops is not performing.
+First copy the files in the code folder to your pistorm folder on your pi.  
+Run ./build_zz9.sh to build the test program just like buptest.  
+Then run sudo ./zz9fulltest.
+* Test 1:  
+Watch the LED's on the address bus. they should all light in turn from A1 to A23. AS should dim slightly as it goes from being held high to being pulsed. All data bits should appear to be on for the duration of this test.
+* Test 2:
+Watch the Data bus LED's. They should light in turn from D0 through to D15. the zz9fulltest program will also read the state back so if there is a discrepency between what is written and what is read then it will be displayed as a data mismatch error.
+if you want to force an error, you can goahead and set one of the data lines high or low with the breakout area by bridging the centre row with an adjacent vcc or gnd. this is probably best done with a 1K resistor, but not entirely necessary.
 
 Any discrepencies at this point can be referenced to the schematic to find the appropriate pin that might need attention.
-If there are no obvious faults at this point, then it may be a data read error causing problems if buptest still fails in a real amiga. When buptest runs on the PiStorm tester, all reads should display a mismatch of `garbege data mismatch: data read at ${some address} 0x0000 should be 0x4F2A` or similar. The read should be 0x0000 and the expected will be random. if it is not 0x0000 then there is a  stuck-high error somewhere. stuck high usually means a flip-flop input is disconnected and floating. This usually points to one of 3 things: the flipflop leg is bridged to VCC (Though this would show up as a permanently lit LED) or the flip-flop bit leg is not properly soldered and needs reflowing, or the CPU pin is not fully flowed into the internal layers. I have seen this happen several times, especially on D0-D4.
-Stuck low errors can be found by pulling data lines (using the jumper breakouts) when running buptest. Pull one line high and buptest should show a read data of 0x0001 or 0x0020 or 0x0400 or 0x8000 (or shifted up the bit range for 16/32 bit reads like 0x8000000) if you don't see data reads reflecting the high bits then that's where your stuck bit is and you can trace the bit error to the relevant flip-flop pin (probably an unconnected output or a single fried flip-flop)
-#### Further Diagnosis
-The above steps should find the vast majority of errors, but sometimes write errors need a bit more detective work, which needs a tester program that will cycle through the data bus and address bus bits slow enough (but repeated many times to make the lights persist) and for this a modified version of buptest needs to be used (TBD) this is also required to hit all 23 address bus lines.
+
+### Typical problems: 
+* Address or data bus LED's don't come on when supposed to  
+This is usually means the output pin of the flip-flop connected to the CPU pin isn't connected. This can either be a incorrectly soldered CPU pin or flip-flop pin. Knowing which Data or Address pin is at fault can then be directly traced through the schematic in the code folder. It can also mean a connection from the CPLD to the flip-flops is broken. This can manifest as bot an address pin AND a data pin being out. e.g. A3 and D3, due to the way the internal data path is shared.  
+* Address or data LED's stuck on  
+can either be a short to VCC or sometimes open circuit on the flip-flops input as the inputs can float high.
+* LED's show correct but there's a read mismatch
+Run buptest and while it's doing a read loop, put each data pin high or low and see that buptest shows the read data correctly (the state of the lights should be what it reads on the read loop)  
+Example: if you make D3 high (connect to vcc) buptest should say garbege data mismatch at $[some address] read 0x0008. should be: 0x[some random number]  
+The hex value read should correspond to what you set (remember how to convert data bits to hex... D0 = 0x0001, D1 = 0x0002, D2 = 0x0004, D3 = 0x0008 - repeat up to D15 = 0x8000)
+
+TODO: the tester program needs a read loop to display what's been set on the data bus in real time until the program is quit. For now use the read portion of buptest.
