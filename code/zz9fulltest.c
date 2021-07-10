@@ -24,7 +24,7 @@
 #define SIZE_MEGA (1024 * 1024)
 #define SIZE_GIGA (1024 * 1024 * 1024)
 
-uint8_t *garbege_datas;
+uint8_t garbege_datas[2 * SIZE_MEGA];
 extern volatile unsigned int *gpio;
 
 struct timespec f2;
@@ -130,10 +130,25 @@ test_loop:;
       for (uint32_t i = 0; i < test_size; i++) 
 	  {
 		  //write 512k writes on each address pin (A1-23)
-          write8(ja, 0xFFFF);
+          write16(ja, 0xFFFF);
+      }
+    }
+	printf("Testing Data bus output pins individually...\n");
+    for (int j=0;j<16;++j)
+    {
+      printf("write16: data = %.4X\n", 1 << j);
+      for (uint32_t i = 0; i < test_size; i++) 
+	  {
+          while(garbege_datas[i] == 0x00)
+		  {
+              garbege_datas[i] = (uint8_t)(rand() % 0xFF);
+                  }
+			  write32(i, (uint16_t)(1 << j));
+		  
       }
     }
 	
+	printf("The following test only works on non-A variant flip-flops (373 or 374's not 373A or 374A\n");
 	for (int j=0;j<16;++j)
     {
 	  uint32_t tmp = 1 << j;
