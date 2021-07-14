@@ -54,7 +54,7 @@ If you need to address any of these issues, here's where to start:
 Data **read** is handled by U3 on the PiStorm  
 Data **write** is handled by U5
 
-Address bus (write only) A1-A15 is handled by U2
+Address bus (write only) A1-A15 is handled by U2  
 Address bus A16-A23 is handled by U6
 
 Reference the [Pistorm schematic](https://github.com/abrugsch/PistormTester/blob/main/code/Pistorm_Rev_B_schematic.pdf) for further details of specific pins to target
