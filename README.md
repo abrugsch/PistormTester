@@ -61,7 +61,7 @@ Address bus A16-A23 is handled by U6
 Reference the [Pistorm schematic](https://github.com/abrugsch/PistormTester/blob/main/code/Pistorm_Rev_B_schematic.pdf) for further details of specific pins to target 
 
 ## Advanced tests
-Currently the included tests only cover the address and data busses. There are 18 other signal lines that are handled by this tester and at them moment nothing has been written to assess these other lines.  
+Currently the included tests only cover the address and data busses. There are 18 other signal lines that are handled by this tester and at the moment nothing has been written to assess these other lines.  
 When viewing the board, in normal operation the following should be lit (dimly as they are being strobed)  
 * IPL0
 * IPL1
