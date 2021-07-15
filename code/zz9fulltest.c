@@ -134,7 +134,22 @@ test_loop:;
       }
     }
 	printf("Testing Data bus output pins individually...\n");
-    for (int j=0;j<16;++j)
+	int j=0;
+    for (;j<16;++j)
+    {
+      printf("write16: data = %.4X\n", 1 << j);
+      for (uint32_t i = 0; i < test_size; i++) 
+	  {
+          while(garbege_datas[i] == 0x00)
+		  {
+              garbege_datas[i] = (uint8_t)(rand() % 0xFF);
+                  }
+			  write32(i, (uint16_t)(1 << j));
+		  
+      }
+    }
+	printf("And back down... \n");
+	for (j=15;j>=0;--j)
     {
       printf("write16: data = %.4X\n", 1 << j);
       for (uint32_t i = 0; i < test_size; i++) 
@@ -149,7 +164,7 @@ test_loop:;
     }
 	
 	printf("The following test only works on non-A variant flip-flops (373 or 374's not 373A or 374A\n");
-	for (int j=0;j<16;++j)
+	for (j=0;j<16;++j)
     {
 	  uint32_t tmp = 1 << j;
       printf("write and read back data bus pins (read16/write16...\n");
@@ -163,16 +178,25 @@ test_loop:;
       }
 
     }
-    printf("read8 errors total: %d.\n", errors);
+	for (j=15;j>=0;--j)
+    {
+	  uint32_t tmp = 1 << j;
+      printf("write and read back data bus pins (read16/write16...\n");
+      write16(j+1, tmp);
+	  sleep(1);
+      uint32_t c = read16(j+1);
+      if (c != tmp) 
+	  {
+          printf("READ16: write/read data mismatch: read %.2X should be %.2X.\n",  c, tmp);
+          errors++;
+      }
+
+    }
+	
+    printf("read16 errors total: %d.\n", errors);
     total_errors += errors;
     errors = 0;
     sleep (1);
-
-    printf("read16 even errors total: %d.\n", errors);
-    total_errors += errors;
-    errors = 0;
-    sleep (1);
-
 
     if (loop_tests) {
         printf ("Loop %d done. Begin loop %d.\n", cur_loop + 1, cur_loop + 2);
