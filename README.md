@@ -11,6 +11,7 @@ You can build them by hand. submit the gerbers (Rev B gerbers have not yet been 
 The big caveat is that they(JLCPCB assembly) don't have a 5v 7-ish MHz oscillator in their assembly catalog so that part has an LCSC part number ([C387338](https://lcsc.com/product-detail/Oscillators_Shenzhen-SCTF-Elec-S3D8-000000A20F30T_C387338.html)) but must be sourced and placed seperately.
 
 ### How to
+The code folder of this repo has some simple tests for checking that the address and data busses are behaving correctly. here are the instructions for using them on PiStorm. For more advanced tests, see the note at the bottom of this readme.    
 First copy the files in the [code folder of this repo](https://github.com/abrugsch/PistormTester/tree/main/code) to your pistorm folder on your pi.  
 Run  
 > ```./build_zz9tests.sh```  
@@ -57,4 +58,24 @@ Data **write** is handled by U5
 Address bus (write only) A1-A15 is handled by U2  
 Address bus A16-A23 is handled by U6
 
-Reference the [Pistorm schematic](https://github.com/abrugsch/PistormTester/blob/main/code/Pistorm_Rev_B_schematic.pdf) for further details of specific pins to target
+Reference the [Pistorm schematic](https://github.com/abrugsch/PistormTester/blob/main/code/Pistorm_Rev_B_schematic.pdf) for further details of specific pins to target 
+
+## Advanced tests
+Currently the included tests only cover the address and data busses. There are 18 other signal lines that are handled by this tester and at them moment nothing has been written to assess these other lines.  
+When viewing the board, in normal operation the following should be lit (dimly as they are being strobed)  
+* IPL0
+* IPL1
+* IPL2
+* BG
+* VMA
+* E
+* UDS
+* LDS
+* RW
+
+This only covers the output of the 384 data buffers, and therefore there could also be hidden disconnections between the 384's and the CPLD.  
+Example: a disconnected pin on the 384 on the CPLD side of the RST line meant the CPLD I/O was floating. the test board appeared correct (light off) but in use the emulator wouldn't start because RST was toggling on and off due to floating. Re-flowing the suspect 384 resolved the problem.
+
+Testing of the supporting signals will probably have to be done with a logic analyzer or a complementing microcontroller dev board such as an arduino (one that's 5v tolerant) to read the pins and log what states they take. this board was originally intended to have a socket for a mini/micro arduino but for the sake of flexibility was left off.
+
+As Advanced tests are created by myself or the PiStorm community, they will be documented here. (please submit issues or pull requests for any suitable tests you need or have come up with)
