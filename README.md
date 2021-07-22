@@ -12,7 +12,7 @@ The big caveat is that they(JLCPCB assembly) don't have a 5v 7-ish MHz oscillato
 
 ### How to
 The code folder of this repo has some simple tests for checking that the address and data busses are behaving correctly. here are the instructions for using them on PiStorm. For more advanced tests, see the note at the bottom of this readme.    
-First copy the files in the [code folder of this repo](https://github.com/abrugsch/PistormTester/tree/main/code) to your pistorm folder on your pi.  
+First copy the files in the [code folder of this repo](https://github.com/abrugsch/PistormTester/tree/main/code) to your pistorm folder on your pi. (put the files in directly, not in a subfolder.)  
 Run  
 > ```./build_zz9tests.sh```  
 
