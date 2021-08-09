@@ -47,13 +47,12 @@ There is now a video demonstrating the use of the ZZ9 board:
  
 ### Typical problems: 
 * Address or data bus LED's don't come on when supposed to  
-This is usually means the output pin of the flip-flop connected to the CPU pin isn't connected. This can either be a incorrectly soldered CPU pin or flip-flop pin. Knowing which Data or Address pin is at fault can then be directly traced through the schematic in the code folder. It can also mean a connection from the CPLD to the flip-flops is broken. This can manifest as bot an address pin AND a data pin being out. e.g. A3 and D3, due to the way the internal data path is shared.  
+This is usually means the output pin of the flip-flop connected to the CPU pin isn't connected. This can either be a incorrectly soldered CPU pin or flip-flop pin. Knowing which Data or Address pin is at fault can then be directly traced through the schematic in the code folder. It can also mean a connection from the CPLD to the flip-flops is broken. This can manifest as both an address pin AND a data pin being out. e.g. A3 and D3, due to the way the internal data path is shared.  
 * Address or data LED's stuck on  
 can either be a short to VCC or sometimes open circuit on the flip-flops input as the inputs can float high.
-* LED's show correct but there's a read mismatch  
-Run buptest and while it's doing a read loop, put each data pin high or low and see that buptest shows the read data correctly (the state of the lights should be what it reads on the read loop)  
-Example: if you make D3 high (connect to vcc) buptest should say garbege data mismatch at $[some address] read 0x0008. should be: 0x[some random number]  
-The hex value read should correspond to what you set (remember how to convert data bits to hex... D0 = 0x0001, D1 = 0x0002, D2 = 0x0004, D3 = 0x0008 - repeat up to D15 = 0x8000)
+* LED's show correct but there's a buptest read mismatch  
+Run zz9readloop and while it's doing the loop, put each data pin high or low and see that the program shows the read data correctly (the state of the lights is displayed directly on the read loop in both Hex and Binary (bit) format)  
+Example: if you make D3 high (connect to vcc) zz9readloop should say `READ16: read data: 0x0008(hex) 0000000000001000 (binary)`
 
 If you need to address any of these issues, here's where to start:  
 Data **read** is handled by U3 on the PiStorm  
