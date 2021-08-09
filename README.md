@@ -11,8 +11,10 @@ You can build them by hand. submit the gerbers (Rev B gerbers have not yet been 
 The big caveat is that they(JLCPCB assembly) don't have a 5v 7-ish MHz oscillator in their assembly catalog so that part has an LCSC part number ([C387338](https://lcsc.com/product-detail/Oscillators_Shenzhen-SCTF-Elec-S3D8-000000A20F30T_C387338.html)) but must be sourced and placed seperately.
 
 ### How to
-The code folder of this repo has some simple tests for checking that the address and data busses are behaving correctly. here are the instructions for using them on PiStorm. For more advanced tests, see the note at the bottom of this readme.    
-First copy the files in the [code folder of this repo](https://github.com/abrugsch/PistormTester/tree/main/code) to your pistorm folder on your pi. (put the files in directly, not in a subfolder.)  
+The code folder of this repo has some simple tests for checking that the address and data busses are behaving correctly. Here are the instructions for using them on PiStorm. For more advanced tests, see the note at the bottom of this readme.    
+
+If you have a recent pull of the [main PiStorm repo](https://github.com/captain-amygdala/pistorm/) then you do not need to copy any files as the test files are now included in the PiStorm root folder, though you will still need to follow the build instructions below, but the code files are probably already in your PiStorm folder.  
+If not, then copy the files in the [code folder of this repo](https://github.com/abrugsch/PistormTester/tree/main/code) to your pistorm folder on your pi. (put the files in directly, not in a subfolder.)  
 Run  
 > ```./build_zz9tests.sh```  
 
@@ -39,8 +41,10 @@ simply run
 and then modify data bits using the tweak headers and see what comes on the screen. A-variant flip-flops (LVC16373**A** or LVC16374**A**) will hold the data after you set it allowing you to set multiple bits at a time while only using one wire/resistor to do it.
 
 The program will read at half second intervals for 2 minutes.  
-ctrl-c will terminate early
-
+ctrl-c will terminate early  
+There is now a video demonstrating the use of the ZZ9 board:  
+[![PiStorm Tester Howto!](https://user-images.githubusercontent.com/1519975/128720736-20eae241-e480-43d3-9899-2ef6e7a40ef6.jpg)](https://www.youtube.com/watch?v=HWeGSCD97hg)  
+ 
 ### Typical problems: 
 * Address or data bus LED's don't come on when supposed to  
 This is usually means the output pin of the flip-flop connected to the CPU pin isn't connected. This can either be a incorrectly soldered CPU pin or flip-flop pin. Knowing which Data or Address pin is at fault can then be directly traced through the schematic in the code folder. It can also mean a connection from the CPLD to the flip-flops is broken. This can manifest as bot an address pin AND a data pin being out. e.g. A3 and D3, due to the way the internal data path is shared.  
