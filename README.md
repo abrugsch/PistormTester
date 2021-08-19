@@ -6,9 +6,18 @@ PiStorm Tester is a PCB that exposes all the IO's of the 68000 DIP64 socket that
 Combined with testing programs on the pi such as buptest, it becomes easy to narrw down individual faults such as unsoldered or broken individual flip-flops.
 
 ### Make Them
-You can build them by hand. submit the gerbers (Rev B gerbers have not yet been tested. use at your own risk. roll back to Rev A if you want a confirmed working board) to a PCB fab of your choice (AllPCB has a free promotion ATM) but then you have to place and solder 60 0603 LED's and 15 4x0402 resistor arrays by hand. That's pretty tedious so I've also included the JLCPCB production files to get them assembled. All the JLC parts are basic parts so it costs barely more to get them assembled than to just order the bare boards. (10x costs around $50 including UK delivery by courier)
+* Latest Version gerbers: [RevC](https://github.com/abrugsch/PistormTester/tree/main/production/gerbers/PiStormTesterRevC.zip)
 
-The big caveat is that they(JLCPCB assembly) don't have a 5v 7-ish MHz oscillator in their assembly catalog so that part has an LCSC part number ([C387338](https://lcsc.com/product-detail/Oscillators_Shenzhen-SCTF-Elec-S3D8-000000A20F30T_C387338.html)) but must be sourced and placed seperately.
+You can build them by hand. submit the gerbers (Rev C gerbers have adjustments made for ZIF sockets with bigger pins. If you definitely don't want to use a ZIF, a Rev-B board might fit better but RevC should be universal) to a PCB fab of your choice (AllPCB has a free promotion ATM) but then you have to place and solder 60 0603 LED's and 15 4x0402 resistor arrays by hand. That's pretty tedious so I've also included the JLCPCB [production files](https://github.com/abrugsch/PistormTester/tree/main/production) to get them assembled. All the JLC parts are basic parts so it costs barely more to get them assembled than to just order the bare boards. (10x costs around $50 including UK delivery by courier)  
+* PistormTester-top-pos-JLC.csv - JLC position file
+* PistormTester-BOM-jlc.csv - JLC BOM file
+* gerbers/PiStormTesterRevC.zip - latest gerber files
+
+The big caveat is that they(JLCPCB assembly) don't have a 5v 7-ish MHz oscillator in their assembly catalog so that part has an LCSC part number ([C387338](https://lcsc.com/product-detail/Oscillators_Shenzhen-SCTF-Elec-S3D8-000000A20F30T_C387338.html)) but must be sourced and placed seperately.  
+If you do a JLC run of 10 boards, they should come in at around $30 (plus taxes and delivery - Total cost to the UK using an SMD voucher and their cheapest (about 2 weeks) delivery was $37 last time I did a batch.)  
+
+The biggest costs in producing these boards are the LED's and the oscillator. If you don't care about colo(u)r of LEDs the cheapest option is to use all red ones as they are significantly cheaper than any other colo(u)r so there is an alternative BOM file with all the LED's using the cheaper RED part
+* PistormTester-all-red-BOM-jlc.csv
 
 ### How to
 The code folder of this repo has some simple tests for checking that the address and data busses are behaving correctly. Here are the instructions for using them on PiStorm. For more advanced tests, see the note at the bottom of this readme.    
