@@ -80,5 +80,5 @@ RN12,R_Pack04,R_Array_Concave_4x0402,89.916,-95.885,0,top
 RN13,R_Pack04,R_Array_Concave_4x0402,92.71,-95.885,0,top
 RN14,R_Pack04,R_Array_Concave_4x0402,90.297,-151.765,180,top
 RN15,R_Pack04,R_Array_Concave_4x0402,90.424,-137.287,0,top
-U1,3v3_LDO,SOT-23,120.243,-96.393,0,top
-X1,8MHz,Oscillator_SMD_EuroQuartz_XO32-4Pin_3.2x2.5mm,119.888,-102.489,0,top
+U1,3v3_LDO,SOT-23,120.243,-96.393,180,top
+X1,8MHz,Oscillator_SMD_EuroQuartz_XO32-4Pin_3.2x2.5mm,119.888,-102.489,270,top
