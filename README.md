@@ -15,11 +15,11 @@ You can build them by hand. submit the gerbers (Rev C gerbers have adjustments m
 
 ~~The big caveat is that they(JLCPCB assembly) don't have a 5v 7-ish MHz oscillator in their assembly catalog so that part has an LCSC part number ([C387338](https://lcsc.com/product-detail/Oscillators_Shenzhen-SCTF-Elec-S3D8-000000A20F30T_C387338.html)) but must be sourced and placed seperately.~~ As of RevC.1 there is now a 3.3v oscillator and regulator so that all parts can be assembled by JLC with the included BOM. There are even alternative 3.3v Oscillators if the one in the BOM is out of stock. If you use a RevC or older gerber set, then the BOM and position files will be incorrect so please roll them back to earlier versions.  
 
-__IMPORTANT__ There is now a jumper 0 Ohm resistor in the BOM and position file. If you use the 3.3v regulator and oscillator you ___MUST___ exclude R1 from the build.  
+__IMPORTANT__ There is now a jumper 0 Ohm resistor in the BOM and position file. If you use the 3.3v regulator and oscillator you ___MUST___ exclude R1 from the build. If you use a 5v Oscillator you ___MUST___ exclude U1, C3 and C4 from the build and keep R1.  
 
 If you do a JLC run of 10 boards, they should come in at around $30 (plus taxes and delivery - Total cost to the UK using an SMD voucher and their cheapest (about 2 weeks) delivery was $37 last time I did a batch, £35 for all red LEDs.)  
 
-The biggest costs in producing these boards are the LED's and the oscillator. If you don't care about colo(u)r of LEDs the cheapest option is to use all red ones as they are significantly cheaper than any other colo(u)r so there is an alternative BOM file with all the LED's using the cheaper RED part
+The biggest costs in producing these boards are the LED's and the oscillator. If you don't care about colo(u)r of LEDs the cheapest option is to use all red ones as they are significantly cheaper than any other colo(u)r so there is an alternative BOM file with all the LED's using the cheaper RED part. (Although now that the BOM LCSC part numbers have been tweakes to put more expensive ones on places where the lowest quantity are, the difference isn't so great: about $2 between All-Red and different colours.)  
 * PistormTester-all-red-BOM-jlc.csv
 
 ### How to
