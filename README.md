@@ -20,7 +20,9 @@ __IMPORTANT__ There is now a jumper 0 Ohm resistor in the BOM and position file.
 If you do a JLC run of 10 boards, they should come in at around $30 (plus taxes and delivery - Total cost to the UK using an SMD voucher and their cheapest (about 2 weeks) delivery was $37 last time I did a batch, £35 for all red LEDs.)  
 
 The biggest costs in producing these boards are the LED's and the oscillator. If you don't care about colo(u)r of LEDs the cheapest option is to use all red ones as they are significantly cheaper than any other colo(u)r so there is an alternative BOM file with all the LED's using the cheaper RED part. (Although now that the BOM LCSC part numbers have been tweakes to put more expensive ones on places where the lowest quantity are, the difference isn't so great: about $2 between All-Red and different colours.)  
-* PistormTester-all-red-BOM-jlc.csv
+* PistormTester-all-red-BOM-jlc.csv  
+
+If you build these, consider [Buying me a coffee](https://ko-fi.com/abrugsch)
 
 ### How to
 The code folder of this repo has some simple tests for checking that the address and data busses are behaving correctly. Here are the instructions for using them on PiStorm. For more advanced tests, see the note at the bottom of this readme.    
