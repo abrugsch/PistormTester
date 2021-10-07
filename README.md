@@ -7,8 +7,8 @@ I have spent a considerable amount of time refining the board and the tests that
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/V7V13CVG6)
 
 ### What is?
-PiStorm Tester is a PCB that exposes all the IO's of the 68000 DIP64 socket that [PiStorm](https://github.com/captain-amygdala/pistorm/) uses. There are status LED's on all the control/Address/Data Bus lines to easily see if a single line is stuck high or low. each IO is also broken out to a header for easy connection to an external microcontroller such as an arduino for more accurate analysis of the outputs, or for pulling inputs high or low as required. where the line is either an input or bi-directional (such as the Data bus) the headers have a handy VCC and GND rail adjacent for easy jumpering. 
-Combined with testing programs on the pi such as buptest, it becomes easy to narrw down individual faults such as unsoldered or broken individual flip-flops.
+PiStorm Tester is a PCB that exposes all the IO's of the 68000 DIP64 socket that [PiStorm](https://github.com/captain-amygdala/pistorm/) uses. There are status LED's on all the control/Address/Data Bus lines to easily see if a single line is stuck high or low. Each IO is also broken out to a header for easy connection to an external microcontroller such as an arduino for more accurate analysis of the outputs, or for pulling inputs high or low as required. where the line is either an input or bi-directional (such as the Data bus) the headers have a handy VCC and GND rail adjacent for easy jumpering. 
+Combined with testing programs on the pi such as buptest, it becomes easy to narrow down individual faults such as unsoldered or broken individual flip-flops.
 
 ### Make Them
 * Latest Version gerbers: [RevC.1](https://github.com/abrugsch/PistormTester/tree/main/production/gerbers/PiStormTesterRevC.1.zip)
@@ -18,13 +18,13 @@ You can build them by hand. submit the gerbers (Rev C gerbers have adjustments m
 * PistormTester-BOM-jlc.csv - JLC BOM file
 * gerbers/PiStormTesterRevC.1.zip - latest gerber files
 
-~~The big caveat is that they(JLCPCB assembly) don't have a 5v 7-ish MHz oscillator in their assembly catalog so that part has an LCSC part number ([C387338](https://lcsc.com/product-detail/Oscillators_Shenzhen-SCTF-Elec-S3D8-000000A20F30T_C387338.html)) but must be sourced and placed seperately.~~ As of RevC.1 there is now a 3.3v oscillator and regulator so that all parts can be assembled by JLC with the included BOM. There are even alternative 3.3v Oscillators if the one in the BOM is out of stock. If you use a RevC or older gerber set, then the BOM and position files will be incorrect so please roll them back to earlier versions.  
+~~The big caveat is that they(JLCPCB assembly) don't have a 5v 7-ish MHz oscillator in their assembly catalog so that part has an LCSC part number ([C387338](https://lcsc.com/product-detail/Oscillators_Shenzhen-SCTF-Elec-S3D8-000000A20F30T_C387338.html)) but must be sourced and placed separately.~~ As of RevC.1 there is now a 3.3v oscillator and regulator so that all parts can be assembled by JLC with the included BOM. There are even alternative 3.3v Oscillators if the one in the BOM is out of stock. If you use a RevC or older gerber set, then the BOM and position files will be incorrect so please roll them back to earlier versions.  
 
 __IMPORTANT__ There is now a jumper 0 Ohm resistor in the BOM and position file. If you use the 3.3v regulator and oscillator you ___MUST___ exclude R1 from the build. If you use a 5v Oscillator you ___MUST___ exclude U1, C3 and C4 from the build and keep R1.  
 
 If you do a JLC run of 10 boards, they should come in at around $30 (plus taxes and delivery - Total cost to the UK using an SMD voucher and their cheapest (about 2 weeks) delivery was $37 last time I did a batch, £35 for all red LEDs.)  
 
-The biggest costs in producing these boards are the LED's and the oscillator. If you don't care about colo(u)r of LEDs the cheapest option is to use all red ones as they are significantly cheaper than any other colo(u)r so there is an alternative BOM file with all the LED's using the cheaper RED part. (Although now that the BOM LCSC part numbers have been tweakes to put more expensive ones on places where the lowest quantity are, the difference isn't so great: about $2 between All-Red and different colours.)  
+The biggest costs in producing these boards are the LED's and the oscillator. If you don't care about colo(u)r of LEDs the cheapest option is to use all red ones as they are significantly cheaper than any other colo(u)r so there is an alternative BOM file with all the LED's using the cheaper RED part. (Although now that the BOM LCSC part numbers have been tweaked to put more expensive ones on places where the lowest quantity are, the difference isn't so great: about $2 between All-Red and different colours.)  
 * PistormTester-all-red-BOM-jlc.csv  
 
 ### How to
@@ -45,17 +45,17 @@ Watch the LED's on the address bus. they should all light in turn from A1 to A23
 Watch the Data bus LED's. They should light in turn from D0 through to D15.  
 * Test 3:  
 **THIS TEST ONLY WORKS FOR NON-A VARIANT FLIP-FLOPS** On A-Variant flip-flops (LVC16373**A** or LVC16374**A**) the data bits won't even appear to light up as they are only on for such a brief period of time  
-The zz9fulltest program will then walk the databus lines individually and read the state back so if there is a discrepency between what is written and what is read then it will be displayed as a data mismatch error.
-If you want to force an error, you can go ahead and set one of the data lines high or low with the breakout area by bridging the centre row with an adjacent vcc or gnd. this is probably best done with a ~1K resistor, but not entirely necessary.
+The zz9fulltest program will then walk the databus lines individually and read the state back so if there is a discrepancy between what is written and what is read then it will be displayed as a data mismatch error.
+If you want to force an error, you can go ahead and set one of the data lines high or low with the breakout area by bridging the centre row with an adjacent vcc or gnd. This is probably best done with a ~1K resistor, but not entirely necessary.
 
-Any discrepencies at this point can be referenced to the schematic to find the appropriate pin that might need attention.
+Any discrepancies at this point can be referenced to the schematic to find the appropriate pin that might need attention.
 
 For a more thorough test of the data reads there is also zz9readloop which will loop for 2 minutes reading the data bus and displaying the results on screen in Hex and Binary.
 
 simply run  
 > ```sudo ./zz9readloop```  
 
-and then modify data bits using the tweak headers and see what comes on the screen. A-variant flip-flops (LVC16373**A** or LVC16374**A**) will hold the data after you set it allowing you to set multiple bits at a time while only using one wire/resistor to do it.
+and then modify data bits using the tweak headers and see what comes on the screen. A-variant flip-flops (LVC16373**A** or LVC16374**A**) will hold the data after you set it, allowing you to set multiple bits at a time while only using one wire/resistor to do it.
 
 The program will read at half second intervals for 2 minutes.  
 ctrl-c will terminate early  
@@ -63,8 +63,8 @@ There is now a video demonstrating the use of the ZZ9 board:
 [![PiStorm Tester Howto!](https://user-images.githubusercontent.com/1519975/128720736-20eae241-e480-43d3-9899-2ef6e7a40ef6.jpg)](https://www.youtube.com/watch?v=HWeGSCD97hg)  
  
 ### Typical problems: 
-* Address or data bus LED's don't come on when supposed to  
-This is usually means the output pin of the flip-flop connected to the CPU pin isn't connected. This can either be a incorrectly soldered CPU pin or flip-flop pin. Knowing which Data or Address pin is at fault can then be directly traced through the schematic in the code folder. It can also mean a connection from the CPLD to the flip-flops is broken. This can manifest as both an address pin AND a data pin being out. e.g. A3 and D3, due to the way the internal data path is shared.  
+* Address or data bus LED's don't come on when they are supposed to  
+This usually means the output pin of the flip-flop that should be connected to the CPU pin isn't actually connected. This can either be an incorrectly soldered CPU pin or flip-flop pin. Knowing which Data or Address pin is at fault can then be directly traced through the schematic in the code folder. It can also mean a connection from the CPLD to the flip-flops is broken. This can manifest as both an address pin AND a data pin being out. e.g. A3 and D3, due to the way the internal data path is shared.  
 * Address or data LED's stuck on  
 can either be a short to VCC or sometimes open circuit on the flip-flops input as the inputs can float high.
 * LED's show correct but there's a buptest read mismatch  
@@ -94,8 +94,8 @@ When viewing the board, in normal operation the following should be lit (dimly a
 * RW
 
 This only covers the output of the 384 data buffers, and therefore there could also be hidden disconnections between the 384's and the CPLD.  
-Example: a disconnected pin on the 384 on the CPLD side of the RST line meant the CPLD I/O was floating. the test board appeared correct (light off) but in use the emulator wouldn't start because RST was toggling on and off due to floating. Re-flowing the suspect 384 resolved the problem.
+Example: a disconnected pin on the 384 on the CPLD side of the RST line meant the CPLD I/O was floating. The test board appeared correct (light off) but in use the emulator wouldn't start because RST was toggling on and off due to floating. Re-flowing the suspect 384 resolved the problem.
 
-Testing of the supporting signals will probably have to be done with a logic analyzer or a complementing microcontroller dev board such as an arduino (one that's 5v tolerant) to read the pins and log what states they take. this board was originally intended to have a socket for a mini/micro arduino but for the sake of flexibility was left off.
+Testing of the supporting signals will probably have to be done with a logic analyzer or a complementing microcontroller dev board such as an arduino (one that's 5v tolerant) to read the pins and log what states they take. This board was originally intended to have a socket for a mini/micro arduino but for the sake of flexibility was left off.
 
 As Advanced tests are created by myself or the PiStorm community, they will be documented here. (please submit issues or pull requests for any suitable tests you need or have come up with)
