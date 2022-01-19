@@ -1,6 +1,9 @@
 # PiStorm Tester
 ![image](https://github.com/abrugsch/PistormTester/raw/main/pics/zz9-top-render.jpg)
 
+## Assistance:
+If you've gone through the instructions below and watched the video and you need more help decoding what the board is telling you (some things are not so obvious if you're not ultra familiar with the PiStorm schematic) then feel free to hit me up. the best way is usually through Discord via the [PiStorm server](https://discord.gg/mrmyGmvGE5) and I'm @ABrugsch on there too.
+
 ## Donate:  
 **If you build these, consider [Buying me a coffee](https://ko-fi.com/abrugsch)**
 I have spent a considerable amount of time refining the board and the tests that go with them, and will often help people understand what their ZZ9 is telling them. A little coffee goes a long way to helping me keep my sanity 🙂  
@@ -63,13 +66,23 @@ There is now a video demonstrating the use of the ZZ9 board:
 [![PiStorm Tester Howto!](https://user-images.githubusercontent.com/1519975/128720736-20eae241-e480-43d3-9899-2ef6e7a40ef6.jpg)](https://www.youtube.com/watch?v=HWeGSCD97hg)  
  
 ### Typical problems: 
-* Address or data bus LED's don't come on when they are supposed to  
+* Address or data bus LED's don't come on when they are supposed to:  
 This usually means the output pin of the flip-flop that should be connected to the CPU pin isn't actually connected. This can either be an incorrectly soldered CPU pin or flip-flop pin. Knowing which Data or Address pin is at fault can then be directly traced through the schematic in the code folder. It can also mean a connection from the CPLD to the flip-flops is broken. This can manifest as both an address pin AND a data pin being out. e.g. A3 and D3, due to the way the internal data path is shared.  
 * Address or data LED's stuck on  
 can either be a short to VCC or sometimes open circuit on the flip-flops input as the inputs can float high.
 * LED's show correct but there's a buptest read mismatch  
 Run zz9readloop and while it's doing the loop, put each data pin high or low and see that the program shows the read data correctly (the state of the lights is displayed directly on the read loop in both Hex and Binary (bit) format)  
 Example: if you make D3 high (connect to vcc) zz9readloop should say `READ16: read data: 0x0008(hex) 0000000000001000 (binary)`
+* Whole 8-bit blocks of any of the address/data busses are not working:  
+each 8-bit bank (A1-7, A8-15, A16-24, D0-7, D8-15) is enabled by an output enable pin on the respective latch chip and is controlled by the CPLD. They are active low and if left floating can have unpredictable results, but usually simply fail to operate the entire bank. The OE pins to check for each bank are as follows:  
+
+| bank | chip | pin |  
+:-: | :-: | :-:  
+| A1-7 | U2 | 1 |  
+| A8-15 | U2 | 24 |  
+| A16-23 | U6 | 1 |  
+| D0-7 | U5 | 1 |  
+| D8-15 | U5 | 24 |  
 
 If you need to address any of these issues, here's where to start:  
 Data **read** is handled by U3 on the PiStorm  
